@@ -1,14 +1,14 @@
 const http = require('http');
 
 const server = http.createServer((req, res) => {
-res.writeHead(200, { 'Content-Type': 'text/plain' });
-if (req.url === '/about') {
-res.end('About Page\n');
-} else if (req.url === '/contact') {
-res.end('Contact Page\n');
-} else {
-res.end('Hello, this is a basic web app!');
-}
+  res.writeHead(200, { 'Content-Type': 'text/plain' });
+  if (req.url === '/about') {
+    res.end('About Page\n');
+  } else if (req.url === '/contact') {
+    res.end('Contact Page\n');
+  } else {
+    res.end('Hello, this is a basic web app!');
+  }
 });
 
 server.listen(3000, () => {
